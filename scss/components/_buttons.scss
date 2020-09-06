@@ -5,29 +5,45 @@
 .btn {
     margin-top: 15px;
     width: 100%;
-    color: #fff;
+    color: $white;
     border: none;
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    transition: background-color 2s;
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: $color-default;
+    &:hover {
+      background-color: $color-default-light;
+    }
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $color-error;
+    &:hover {
+      background-color: $color-error-light;
+    }
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $color-info;
+    &:hover {
+      background-color: $color-info-light;
+    }
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $color-success;
+    &:hover {
+      background-color: $color-success-light;
+    }
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $color-warning;
+    &:hover {
+      background-color: $color-warning-light;
+    }
   }
